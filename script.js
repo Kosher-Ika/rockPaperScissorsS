@@ -1,5 +1,5 @@
 // targeting
-const buttons = document.querySelectorAll("input")
+const buttons = document.querySelectorAll("img")
 // computerFunction
 function computerChoice() {
     const choices = ["rock", "paper", "scissors"]
@@ -10,9 +10,17 @@ let playerScore = 0
 let computerScore = 0
 // disable
 function disableButtons() {
-    buttons.forEach((btn) => {
-        btn.disabled = true
-    })
+    
+    setTimeout(() => {
+        alert("restart")
+        playerScore = 0
+        computerScore = 0
+        show = ""
+        show.innerHTML = ""
+    }, 50);
+    
+    
+   
 }
 
 // playRound
@@ -49,6 +57,6 @@ document.querySelector(".show").innerHTML = show
 
 buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-        playRound(btn.value)
+        playRound(btn.className)
     })
 })

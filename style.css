@@ -1,0 +1,35 @@
+
+h1 {
+    color: black;
+}img {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.show {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+color: white;
+}
+
+body {
+    background-color: blueviolet;
+}
